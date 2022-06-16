@@ -1,0 +1,58 @@
+.formulario__content {
+  display: grid;
+  grid-template-columns: 50fr 20fr;
+
+  .formulario__content__colun {
+    .formulario__content__colun__form {
+      height: 298px;
+      margin-top: 40px;
+      margin-left: 25px;
+      border-radius: 4px;
+      background-color: #2F2F2F; // variavel de fundo
+      box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .formulario__content__colun__comb {
+      height: 152px;
+      margin-top: 25px;
+      margin-left: 25px;
+      border-radius: 4px;
+      background-color: #2F2F2F; // variavel de fundo
+      box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .formulario__content__colun__imgs {
+      display: grid;
+      grid-template-columns: 50fr 50fr;
+
+      .formulario__content__colun__imgs__contact {
+        height:207px;
+        margin-top: 25px;
+        margin-left: 25px;
+        background-color: #2F2F2F; // variavel de fundo
+        box-shadow: 0px 3px 6px #00000029;
+      }
+
+      .formulario__content__colun__imgs__social {
+        height:207px;
+        margin-top: 25px;
+        margin-left: 25px;
+        background-color: #2F2F2F; // variavel de fundo
+        box-shadow: 0px 3px 6px #00000029;
+      }
+
+    }
+  }
+
+  .formulario__content__colun__img {
+    .formulario__content__colun__img__fundo {
+      height: 706px;
+      margin-top: 40px;
+      margin-left: 25px;
+      margin-right: 10px;
+      background-color: #2F2F2F; // variavel de fundo
+      box-shadow: 0px 3px 6px #00000029;
+    }
+
+  }
+}
