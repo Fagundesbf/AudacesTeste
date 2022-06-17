@@ -1,8 +1,10 @@
+
+
 .sidebar-content {
   min-width: 256px;
   max-width: 256px;
   // min-height: 760px;
-  background-color: #2F2F2F; // Variavel fundo Component
+  background-color: var(); // Variavel fundo Component
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.16);
 
   .sidebar__image {
