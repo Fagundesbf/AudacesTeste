@@ -1,3 +1,4 @@
+import { ThemesService } from './../services/themes.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,32 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  menus = [
-    {
-      id:'1',
-      name: 'Teste Audaces',
-      routerLink:"['/home']"
-    },
-    {
-      id:'2',
-      name: 'Exemplo 1',
-      routerLink:''
-    },
-    {
-      id:'3',
-      name: 'Exemplo 2',
-      routerLink:''
-    },
-    {
-      id:'3',
-      name: 'Exemplo 3',
-      routerLink:''
-    },
-  ]
 
-  constructor() { }
+  constructor(private theme: ThemesService) { }
 
   ngOnInit(): void {
+  }
+
+  trocarTema() {
+    let tema = localStorage.getItem('thema');
+    if (tema == 'theme-escuro') {
+      this.theme.enableClaro();
+      this.theme.removeDark();
+      localStorage.setItem('thema', 'theme-claro');
+    } else {
+      this.theme.enableDark();
+      this.theme.enableClaro();
+      localStorage.setItem('thema', 'theme-escuro');
+    }
+
   }
 
 }

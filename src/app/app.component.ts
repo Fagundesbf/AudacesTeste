@@ -1,3 +1,4 @@
+import { ThemesService } from './core/services/themes.service';
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 @Component({
@@ -9,12 +10,24 @@ import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 export class AppComponent implements AfterViewInit {
 
-  constructor(private elementRef: ElementRef) {
+  constructor(private elementRef: ElementRef,
+    private theme: ThemesService) {
 
   }
   ngAfterViewInit() {
-    this.elementRef.nativeElement.ownerDocument
-      .body.style.backgroundColor = '#292929';
+
+    let tema = localStorage.getItem('thema');
+    if(tema =='theme-escuro'){
+      this.theme.enableDark();
+      this.theme.removeClaro();
+    }else{
+      localStorage.setItem('thema', 'theme-normal');
+      alert(tema);
+      this.theme.enableClaro();
+      this.theme.removeDark();
+
+
+    }
   }
 }
 

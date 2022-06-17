@@ -1,39 +1,69 @@
 <div class="sidebar-content">
   <div class="sidebar__image">
-    <img src="../../../assets/logo/Audaces_logo.png" alt="Audaces">
+    <div></div>
   </div>
   <div class="sidebar__descriptions">
     <div class="sidebar__descriptions__title">
       <span>Roboto-Medium 20px</span>
     </div>
     <div class="sidebar__descriptions__subtitle">
-      <span >roboto-regular 14px</span>
+      <span>roboto-regular 14px</span>
     </div>
   </div>
   <div style="max-height:500px; min-height: 480px; overflow: auto; margin-top: 10px;">
     <nav>
-        <a >
-          <li  [routerLink]="['/home']" [routerLinkActive]="['is-active']"> <img src="../../../assets/sidebar/Home.png" width="24" height="24"> <span> Teste Audaces </span></li>
-        </a>
-        <a >
-          <li  [routerLink]="['/item1']" [routerLinkActive]="['is-active']"> <img src="../../../assets/sidebar/placeholder1.png" width="24" height="24"> <span>Exemplo1</span></li>
-        </a>
-        <a >
-          <li  [routerLink]="['/item2']" [routerLinkActive]="['is-active']"> <img src="../../../assets/sidebar/placeholder2.png" width="24" height="24"> <span>Exemplo2</span></li>
-        </a>
-        <a >
-          <li  [routerLink]="['/item3']" [routerLinkActive]="['is-active']"> <img src="../../../assets/sidebar/placeholder3.png" width="24" height="24"> <span>Exemplo3</span></li>
-        </a>
+      <a>
+        <li class="li__home" [routerLink]="['/home']" [routerLinkActive]="['is-active']" >
+
+          <div class="img-home"></div>
+          <div style="padding-left:57px ;">
+            <span> Teste Audaces </span>
+          </div>
+        </li>
+      </a>
+      <a>
+        <li class="li__exemplo1" [routerLink]="['/item1']" [routerLinkActive]="['is-active']">
+
+          <div></div>
+          <div style="padding-left:57px ;">
+            <span>Exemplo1</span>
+          </div>
+          </li>
+      </a>
+      <a>
+        <li  class="li__exemplo2" [routerLink]="['/item2']" [routerLinkActive]="['is-active']">
+          <div></div>
+          <div style="padding-left:57px ;">
+            <span>Exemplo2</span>
+          </div>
+      </a>
+      <a>
+        <li  class="li__exemplo3" [routerLink]="['/item3']" [routerLinkActive]="['is-active']">
+          <div></div>
+          <div style="padding-left:57px ;">
+            <span>Exemplo3</span>
+          </div>
+      </a>
 
     </nav>
   </div>
   <div class="">
     <nav>
-      <a >
-        <li> <img src="../../../assets/sidebar/theme.png" width="24" height="24"> <span> Trocar de tema </span></li>
+      <a (click)="trocarTema()">
+        <li class="li__exemplo4">
+          <div></div>
+          <div style="padding-left:57px ;">
+            <span> Trocar de tema </span>
+          </div>
+         </li>
       </a>
-      <a >
-        <li> <img src="../../../assets/sidebar/username.png" width="24" height="24"> <span> Username </span></li>
+      <a>
+        <li class="li__exemplo5">
+          <div></div>
+          <div style="padding-left:57px ;">
+            <span> Username </span>
+          </div>
+        </li>
       </a>
     </nav>
 

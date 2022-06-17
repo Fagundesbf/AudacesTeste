@@ -1,25 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-// body{
-//   overflow: hidden;
-// }
 
-.btn-primary:hover {
-  color: #292929 !important;
-  background-color: #FF96C7 !important;
-  border-color: #fc76b4 !important;
-}
-.btn-primary {
-  color: #292929 !important;
-  background-color: #fc76b4 !important;
-  border-color: #FF96C7 !important;
-}
-
-.btn-defau{
-  color:#E4E4E4 !important;
-}
-
-.margin-input{
+.margin-input {
   margin-right: 15px;
   min-width: 92px
+}
+
+//theme-normal
+.theme-normal {
+  background-color: #fff !important;
+
+  @import './scss/claro.scss';
+}
+
+//dark-theme
+.dark-theme {
+
+  background-color: #292929 !important;
+  @import './scss/escuro.scss';
+
 }
