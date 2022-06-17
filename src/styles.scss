@@ -3,3 +3,23 @@
 // body{
 //   overflow: hidden;
 // }
+
+.btn-primary:hover {
+  color: #292929 !important;
+  background-color: #FF96C7 !important;
+  border-color: #fc76b4 !important;
+}
+.btn-primary {
+  color: #292929 !important;
+  background-color: #fc76b4 !important;
+  border-color: #FF96C7 !important;
+}
+
+.btn-defau{
+  color:#E4E4E4 !important;
+}
+
+.margin-input{
+  margin-right: 15px;
+  min-width: 92px
+}
