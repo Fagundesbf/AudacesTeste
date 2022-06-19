@@ -209,9 +209,20 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
 
 .formulario__content {
   display: grid;
-  grid-template-columns: 50fr 20fr;
+  grid-template-columns: 30fr 10fr;
+  @media (max-width: 1353px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // grid-template-rows: 1fr;
+      // grid-template-columns:none;
+
+      flex: 100%;
+      padding-right: 25px;
+  }
 
   .formulario__content__colun {
+    width: 100%;
     .formulario__content__colun__form {
       margin-top: 40px;
       margin-left: 25px;
@@ -232,7 +243,17 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
 
     .formulario__content__colun__imgs {
       display: grid;
+
       grid-template-columns: 50fr 50fr;
+      justify-content: space-evenly;
+
+      @media (max-width: 1145px) {
+
+        grid-template-columns: 100%;
+
+      }
+
+
 
       .formulario__content__colun__imgs__contact {
         margin-top: 25px;
@@ -241,9 +262,9 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
         box-shadow: 0px 3px 6px #00000029;
 
         .imgs__contact {
-          display: flex;
-          flex-direction: row;
-          align-items: flex-end;
+          // display: flex;
+          // flex-direction: row;
+          // align-items: flex-end;
 
           .imgs__contact__description {
             position: absolute;
@@ -288,9 +309,9 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
         box-shadow: 0px 3px 6px #00000029;
 
         .redes__social {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
+          // display: flex;
+          // justify-content: flex-start;
+          // align-items: flex-start;
 
           .redes__social__position {
             position: absolute;
@@ -326,17 +347,24 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
   }
 
   .formulario__content__colun__img {
+    width: 100%;
     .formulario__content__colun__img__fundo {
       margin-top: 40px;
       margin-left: 25px;
-      margin-right: 10px;
+      // margin-right: 10px;
       background-color: $color-retangulo; // variavel de fundo
       box-shadow: 0px 3px 6px #00000029;
+      // width: 100%;
+
+      // @media screen and (max-width: 1300px) and (min-width: 1052px) {
+      //  width: 36%;
+      //  max-width: 40%;
+      // }
 
       .colun {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
 
         .colun__position {
           position: absolute;
@@ -364,6 +392,14 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
             width: 100%;
             height: 738px;
           }
+          // @media (max-width: 822px) {
+          //   img {
+          //     opacity: 0.7;
+          //     width: 100%;
+          //     height: 738px;
+          //   }
+          // }
+
         }
       }
     }
@@ -385,6 +421,8 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
   .field__content__item {
     height: 56px;
     display: flex;
+  flex-direction: row;
+
     align-items: center;
 
     span {
@@ -394,10 +432,20 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
     }
   }
 
+  @media (max-width: 1150px) {
+    .field__content__item__input {
+      flex: 100%;
+    }
+  }
+
   .field__content__item__input {
     width: 126px;
     height: 56px;
     margin-right: 15px;
+
+
+
+
   }
 
   .field__content__item__button__add {
@@ -425,6 +473,8 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
   flex-wrap: wrap;
   padding-left: 16px;
   padding-right: 16px;
+
+
 
   .field__content__item__target__label {
     min-width: 92px;
@@ -462,6 +512,32 @@ $logo-sidebar-add:url(./../assets/icons/dark/Add_24px.png);
   div {
     margin-left: 16px;
   }
+
+      @media (max-width: 763px) {
+
+        flex-direction:row;
+        width: 100%;
+        justify-content:start;
+        flex-wrap: wrap;
+        flex:100%;
+
+        div {
+          margin-right: 16px;
+          width: 100%;
+        }
+
+        div {
+          margin-left: 16px;
+        }
+
+
+
+        .btn{
+          width: 100% !important;
+        }
+
+          }
+
 }
 
 
@@ -489,3 +565,5 @@ label {
   color: $color-text-menu;
   pointer-events: none;
 }
+
+
