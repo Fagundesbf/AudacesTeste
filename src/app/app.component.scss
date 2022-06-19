@@ -2,4 +2,15 @@
   app-sidebar{
     display: none;
   }
+  app-nav{
+    display: block;
+  }
 }
+@media (min-width: 1355px) {
+  app-nav{
+    display: none;
+  }
+}
+
+
+

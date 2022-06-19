@@ -9,7 +9,7 @@ $color-text-field: #E4E4E4;
 $color-text-field-img: #fff;
 $color-fundo-imagens: rgba(0, 0, 0, 0.35);
 $logo-imagem: url(./../assets/logo/Audaces_logo.png);
-$logo-sidebar-home: url(./../assets/sidebar/dark/Home.png);
+$logo-sidebar-home: url(../../src/assets/sidebar/dark/Home.png);
 $logo-sidebar-placeHolder1: url(./../assets/sidebar/dark/placeholder1.png);
 $logo-sidebar-placeHolder2: url(./../assets/sidebar/dark/placeholder2.png);
 $logo-sidebar-placeHolder3: url(./../assets/sidebar/dark/placeholder3.png);
@@ -18,37 +18,30 @@ $logo-sidebar-user: url(./../assets/sidebar/dark/username.png);
 $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
 
 
-
 .img-placeHolder1 {
   background-image: $logo-sidebar-placeHolder1;
   background-repeat: no-repeat;
-  // height: 40px;
 }
 
 .img-placeHolder2 {
   background-image: $logo-sidebar-placeHolder2;
   background-repeat: no-repeat;
-  // height: 40px;
 }
 
 .img-placeHolder3 {
   background-image: $logo-sidebar-placeHolder3;
   background-repeat: no-repeat;
-  // height: 40px;
 }
 
 .img-theme {
   background-image: $logo-sidebar-theme;
   background-repeat: no-repeat;
-  // height: 40px;
 }
 
 .img-user {
   background-image: $logo-sidebar-user;
   background-repeat: no-repeat;
-  // height: 40px;
 }
-
 
 .sidebar-content {
   min-width: 256px;
@@ -79,6 +72,7 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
         color: $color-text-field;
         opacity: 1;
         font-family: 'Roboto', sans-serif;
+        font-weight: 700;
       }
     }
 
@@ -194,14 +188,12 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
   li:hover {
     background-color: $color-fundo-menu-hover;
     color: $color-text-menu-hover;
-
-
+    cursor: pointer;
   }
 
   .is-active {
     background-color: $color-fundo-menu-hover;
     color: $color-text-menu-hover;
-
   }
 }
 
@@ -221,7 +213,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
   color: $color-input-text  !important;
 }
 
-
 .formulario__content {
   display: grid;
   grid-template-columns: 30fr 10fr;
@@ -230,9 +221,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // grid-template-rows: 1fr;
-    // grid-template-columns:none;
-
     flex: 100%;
     padding-right: 25px;
   }
@@ -251,7 +239,7 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
       margin-top: 40px;
       margin-left: 25px;
       border-radius: 4px;
-      background-color: $color-retangulo; // variavel de fundo
+      background-color: $color-retangulo;
       box-shadow: 0px 3px 6px #00000029;
     }
 
@@ -261,23 +249,18 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
       margin-top: 25px;
       margin-left: 25px;
       border-radius: 4px;
-      background-color: $color-retangulo; // variavel de fundo
+      background-color: $color-retangulo;
       box-shadow: 0px 3px 6px #00000029;
     }
 
     .formulario__content__colun__imgs {
       display: grid;
-
       grid-template-columns: 50fr 50fr;
       justify-content: space-evenly;
 
       @media (max-width: 1145px) {
-
         grid-template-columns: 100%;
-
       }
-
-
 
       .formulario__content__colun__imgs__contact {
         margin-top: 25px;
@@ -286,17 +269,10 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
         box-shadow: 0px 3px 6px #00000029;
 
         .imgs__contact {
-          // display: flex;
-          // flex-direction: row;
-          // align-items: flex-end;
-
           .img__content {
             position: relative;
             top: -110px;
             display: flex;
-
-
-
 
             .imgs__contact__description {
               position: absolute;
@@ -306,6 +282,8 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
                 font-size: 41px;
                 color: $color-text-field-img;
                 padding-left: 20px;
+                font-weight: 600;
+                letter-spacing: 3.48px;
               }
             }
 
@@ -321,10 +299,11 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
                   font-size: 41px;
                   color: $color-text-field-img;
                   padding-left: 20px;
+                  font-weight: 600;
+                  letter-spacing: 3.48px;
                 }
               }
             }
-
           }
 
 
@@ -344,10 +323,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
         box-shadow: 0px 3px 6px #00000029;
 
         .redes__social {
-          // display: flex;
-          // justify-content: flex-start;
-          // align-items: flex-start;
-
           .redes__content {
             display: flex;
             width: 100%;
@@ -359,7 +334,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
               top: -210px;
             }
 
-
             .redes__social__position {
               position: absolute;
 
@@ -367,6 +341,8 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
                 font-size: 41px;
                 color: $color-text-field-img;
                 padding-left: 20px;
+                font-weight: 600;
+                letter-spacing: 3.48px;
               }
 
               .redes__social__position__top {
@@ -377,13 +353,12 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
                   font-size: 41px;
                   color: $color-text-field-img;
                   padding-left: 20px;
+                  font-weight: 600;
+                  letter-spacing: 3.48px;
                 }
               }
             }
-
           }
-
-
 
           .imagem {
             img {
@@ -393,7 +368,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
           }
         }
       }
-
     }
   }
 
@@ -403,34 +377,45 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
     .formulario__content__colun__img__fundo {
       margin-top: 40px;
       margin-left: 25px;
-      // margin-right: 10px;
-      background-color: $color-retangulo; // variavel de fundo
+      background-color: $color-retangulo;
       box-shadow: 0px 3px 6px #00000029;
-      // width: 100%;
-
-      // @media screen and (max-width: 1300px) and (min-width: 1052px) {
-      //  width: 36%;
-      //  max-width: 40%;
-      // }
 
       .colun {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-
         .colun__content {
           position: relative;
           bottom: 410px;
-          /* top: -443px; */
           display: flex;
           justify-content: center;
 
+          .colun__position__example {
+            position: absolute;
+
+            span {
+              font-size: 20px;
+              color: $color-text-field-img;
+              font-weight: 600;
+              letter-spacing: 3.48px;
+            }
+
+            .colun__position__top__exemple {
+              position: relative;
+              top: 90px;
+
+              span {
+                font-size: 20px;
+                color: $color-text-field-img;
+                letter-spacing: 3.48px;
+              }
+            }
+          }
           .colun__position {
             position: absolute;
 
             span {
               font-size: 41px;
               color: $color-text-field-img;
+              font-weight: 600;
+              letter-spacing: 3.48px;
 
             }
 
@@ -441,12 +426,12 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
               span {
                 font-size: 41px;
                 color: $color-text-field-img;
+                font-weight: 600;
+                letter-spacing: 3.48px;
               }
             }
           }
-
         }
-
 
         .imagem {
           img {
@@ -454,24 +439,15 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
             width: 100%;
             height: 738px;
           }
-
-          // @media (max-width: 822px) {
-          //   img {
-          //     opacity: 0.7;
-          //     width: 100%;
-          //     height: 738px;
-          //   }
-          // }
-
         }
       }
     }
-
   }
 }
 
 .span__title__field {
   color: $color-text-field;
+  font-weight: 700;
 }
 
 .field__content {
@@ -485,7 +461,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
     height: 56px;
     display: flex;
     flex-direction: row;
-
     align-items: center;
 
     span {
@@ -505,10 +480,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
     width: 126px;
     height: 56px;
     margin-right: 15px;
-
-
-
-
   }
 
   .field__content__item__button__add {
@@ -538,8 +509,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
   padding-left: 16px;
   padding-right: 16px;
 
-
-
   .field__content__item__target__label {
     min-width: 92px;
     height: 56px;
@@ -558,8 +527,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
     height: 56px;
     margin-right: 15px;
   }
-
-
 }
 
 .field__content__button {
@@ -568,7 +535,6 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
   margin-top: 36px;
   margin-right: 19px;
   padding-bottom: 36px;
-
   div {
     margin-right: 16px
   }
@@ -594,14 +560,10 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
       margin-left: 16px;
     }
 
-
-
     .btn {
       width: 100% !important;
     }
-
   }
-
 }
 
 
@@ -647,4 +609,65 @@ label {
     border-radius: 50px;
     z-index: 10;
   }
+}
+
+.bg-light{
+  background-color: $color-retangulo !important;
+  color:white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:$color-input-text !important;
+}
+
+.nav__img{
+  width: 20px;
+  padding-right: 40px;
+  background-image:($logo-sidebar-home);
+  background-repeat: no-repeat;
+}
+.nav__img-1{
+  width: 20px;
+  padding-right: 40px;
+  background-image:($logo-sidebar-placeHolder1);
+  background-repeat: no-repeat;
+}
+.nav__img-2{
+  width: 20px;
+  padding-right: 40px;
+  background-image:($logo-sidebar-placeHolder2);
+  background-repeat: no-repeat;
+}
+.nav__img-3{
+  width: 20px;
+  padding-right: 40px;
+  background-image:($logo-sidebar-placeHolder3);
+  background-repeat: no-repeat;
+}
+.nav__img-4{
+  width: 20px;
+  padding-right: 40px;
+  background-image:($logo-sidebar-theme);
+  background-repeat: no-repeat;
+}
+.nav__img-5{
+  width: 20px;
+  padding-right: 40px;
+  background-image:($logo-sidebar-user);
+  background-repeat: no-repeat;
+}
+
+.logo{
+  width: 179px;
+  height: 33px;
+  padding-right: 40px;
+  background-image:($logo-imagem);
+  background-repeat: no-repeat;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: end;
+  padding-left: 11px;
 }
