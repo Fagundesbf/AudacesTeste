@@ -236,6 +236,13 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
     flex: 100%;
     padding-right: 25px;
   }
+  @media (min-width: 1354px) {
+    display: grid;
+    grid-template-columns: 50fr 10fr;
+
+    flex: 100%;
+    padding-right: 25px;
+  }
 
   .formulario__content__colun {
     width: 100%;
@@ -346,10 +353,11 @@ $logo-sidebar-add: url(./../assets/icons/dark/Add_24px.png);
             width: 100%;
             position: relative;
             top: -110px;
+
             @media (min-width: 1350px) {
               position: relative;
               top: -210px;
-      }
+            }
 
 
             .redes__social__position {
@@ -620,4 +628,23 @@ label {
   top: -97%;
   color: $color-text-menu;
   pointer-events: none;
+}
+
+.olho {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .olho__img {
+    padding: 10px;
+    margin-top: 70px;
+    margin-right: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-input;
+    border-radius: 50px;
+    z-index: 10;
+  }
 }
