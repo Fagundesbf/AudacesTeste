@@ -18,28 +18,31 @@ $logo-sidebar-user:url(./../assets/sidebar/claro/username.png);
 $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
 
 
-
-.img-placeHolder1{
+.img-placeHolder1 {
   background-image: $logo-sidebar-placeHolder1;
   background-repeat: no-repeat;
   // height: 40px;
 }
-.img-placeHolder2{
+
+.img-placeHolder2 {
   background-image: $logo-sidebar-placeHolder2;
   background-repeat: no-repeat;
   // height: 40px;
 }
-.img-placeHolder3{
+
+.img-placeHolder3 {
   background-image: $logo-sidebar-placeHolder3;
   background-repeat: no-repeat;
   // height: 40px;
 }
-.img-theme{
+
+.img-theme {
   background-image: $logo-sidebar-theme;
   background-repeat: no-repeat;
   // height: 40px;
 }
-.img-user{
+
+.img-user {
   background-image: $logo-sidebar-user;
   background-repeat: no-repeat;
   // height: 40px;
@@ -55,7 +58,8 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
   .sidebar__image {
     padding-left: 19px;
     padding-top: 43px;
-    div{
+
+    div {
       background-image: $logo-imagem;
       background-repeat: no-repeat;
       height: 40px;
@@ -99,12 +103,14 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     color: $color-text-menu;
     display: flex;
     align-items: center;
-    div{
-        background-image: $logo-sidebar-home;
-        background-repeat: no-repeat;
+
+    div {
+      background-image: $logo-sidebar-home;
+      background-repeat: no-repeat;
     }
   }
-  .li__exemplo1{
+
+  .li__exemplo1 {
     padding-left: 19px;
     list-style-type: none;
     height: 48px;
@@ -113,12 +119,14 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     color: $color-text-menu;
     display: flex;
     align-items: center;
-    div{
-        background-image: $logo-sidebar-placeHolder1;
-        background-repeat: no-repeat;
+
+    div {
+      background-image: $logo-sidebar-placeHolder1;
+      background-repeat: no-repeat;
     }
   }
-  .li__exemplo2{
+
+  .li__exemplo2 {
     padding-left: 19px;
     list-style-type: none;
     height: 48px;
@@ -127,12 +135,14 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     color: $color-text-menu;
     display: flex;
     align-items: center;
-    div{
-        background-image: $logo-sidebar-placeHolder2;
-        background-repeat: no-repeat;
+
+    div {
+      background-image: $logo-sidebar-placeHolder2;
+      background-repeat: no-repeat;
     }
   }
-  .li__exemplo3{
+
+  .li__exemplo3 {
     padding-left: 19px;
     list-style-type: none;
     height: 48px;
@@ -141,12 +151,14 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     color: $color-text-menu;
     display: flex;
     align-items: center;
-    div{
-        background-image: $logo-sidebar-placeHolder3;
-        background-repeat: no-repeat;
+
+    div {
+      background-image: $logo-sidebar-placeHolder3;
+      background-repeat: no-repeat;
     }
   }
-  .li__exemplo4{
+
+  .li__exemplo4 {
     padding-left: 19px;
     list-style-type: none;
     height: 48px;
@@ -155,12 +167,14 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     color: $color-text-menu;
     display: flex;
     align-items: center;
-    div{
-        background-image: $logo-sidebar-theme;
-        background-repeat: no-repeat;
+
+    div {
+      background-image: $logo-sidebar-theme;
+      background-repeat: no-repeat;
     }
   }
-  .li__exemplo5{
+
+  .li__exemplo5 {
     padding-left: 19px;
     list-style-type: none;
     height: 48px;
@@ -169,9 +183,10 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     color: $color-text-menu;
     display: flex;
     align-items: center;
-    div{
-        background-image: $logo-sidebar-user;
-        background-repeat: no-repeat;
+
+    div {
+      background-image: $logo-sidebar-user;
+      background-repeat: no-repeat;
     }
   }
 
@@ -208,9 +223,22 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
 
 .formulario__content {
   display: grid;
-  grid-template-columns: 50fr 20fr;
+  grid-template-columns: 30fr 10fr;
+
+  @media (max-width: 1353px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // grid-template-rows: 1fr;
+    // grid-template-columns:none;
+
+    flex: 100%;
+    padding-right: 25px;
+  }
 
   .formulario__content__colun {
+    width: 100%;
+
     .formulario__content__colun__form {
       margin-top: 40px;
       margin-left: 25px;
@@ -231,7 +259,17 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
 
     .formulario__content__colun__imgs {
       display: grid;
+
       grid-template-columns: 50fr 50fr;
+      justify-content: space-evenly;
+
+      @media (max-width: 1145px) {
+
+        grid-template-columns: 100%;
+
+      }
+
+
 
       .formulario__content__colun__imgs__contact {
         margin-top: 25px;
@@ -240,36 +278,47 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
         box-shadow: 0px 3px 6px #00000029;
 
         .imgs__contact {
-          display: flex;
-          flex-direction: row;
-          align-items: flex-end;
+          // display: flex;
+          // flex-direction: row;
+          // align-items: flex-end;
 
-          .imgs__contact__description {
-            position: absolute;
-            padding-bottom: 44px;
+          .img__content {
+            position: relative;
+            top: -110px;
+            display: flex;
 
-            span {
-              font-size: 41px;
-              color: $color-text-field-img;
-              padding-left: 20px;
-            }
-          }
 
-          .imgs__contact__description__contact {
-            position: absolute;
-            padding-bottom: 44px;
 
-            .imgs__contact__description__contact__sub {
-              position: relative;
-              top: 40px;
+
+            .imgs__contact__description {
+              position: absolute;
+              padding-bottom: 44px;
 
               span {
                 font-size: 41px;
-                color:  $color-text-field-img;
+                color: $color-text-field-img;
                 padding-left: 20px;
               }
             }
+
+            .imgs__contact__description__contact {
+              position: absolute;
+              padding-bottom: 44px;
+
+              .imgs__contact__description__contact__sub {
+                position: relative;
+                top: 40px;
+
+                span {
+                  font-size: 41px;
+                  color: $color-text-field-img;
+                  padding-left: 20px;
+                }
+              }
+            }
+
           }
+
 
           .imagem {
             img {
@@ -287,30 +336,45 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
         box-shadow: 0px 3px 6px #00000029;
 
         .redes__social {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
+          // display: flex;
+          // justify-content: flex-start;
+          // align-items: flex-start;
 
-          .redes__social__position {
-            position: absolute;
-
-            span {
-              font-size: 41px;
-              color: $color-text-field-img;
-              padding-left: 20px;
-            }
-
-            .redes__social__position__top {
+          .redes__content {
+            display: flex;
+            width: 100%;
+            position: relative;
+            top: -110px;
+            @media (min-width: 1350px) {
               position: relative;
-              top: 40px;
+              top: -210px;
+      }
+
+
+            .redes__social__position {
+              position: absolute;
 
               span {
                 font-size: 41px;
                 color: $color-text-field-img;
                 padding-left: 20px;
               }
+
+              .redes__social__position__top {
+                position: relative;
+                top: 40px;
+
+                span {
+                  font-size: 41px;
+                  color: $color-text-field-img;
+                  padding-left: 20px;
+                }
+              }
             }
+
           }
+
+
 
           .imagem {
             img {
@@ -325,37 +389,55 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
   }
 
   .formulario__content__colun__img {
+    width: 100%;
+
     .formulario__content__colun__img__fundo {
       margin-top: 40px;
       margin-left: 25px;
-      margin-right: 10px;
+      // margin-right: 10px;
       background-color: $color-retangulo; // variavel de fundo
       box-shadow: 0px 3px 6px #00000029;
+      // width: 100%;
+
+      // @media screen and (max-width: 1300px) and (min-width: 1052px) {
+      //  width: 36%;
+      //  max-width: 40%;
+      // }
 
       .colun {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
 
-        .colun__position {
-          position: absolute;
+        .colun__content {
+          position: relative;
+          bottom: 410px;
+          /* top: -443px; */
+          display: flex;
+          justify-content: center;
 
-          span {
-            font-size: 41px;
-            color: $color-text-field-img;
-
-          }
-
-          .colun__position__top {
-            position: relative;
-            top: 40px;
+          .colun__position {
+            position: absolute;
 
             span {
               font-size: 41px;
-              color:  $color-text-field-img;
+              color: $color-text-field-img;
+
+            }
+
+            .colun__position__top {
+              position: relative;
+              top: 40px;
+
+              span {
+                font-size: 41px;
+                color: $color-text-field-img;
+              }
             }
           }
+
         }
+
 
         .imagem {
           img {
@@ -363,6 +445,15 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
             width: 100%;
             height: 738px;
           }
+
+          // @media (max-width: 822px) {
+          //   img {
+          //     opacity: 0.7;
+          //     width: 100%;
+          //     height: 738px;
+          //   }
+          // }
+
         }
       }
     }
@@ -384,6 +475,8 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
   .field__content__item {
     height: 56px;
     display: flex;
+    flex-direction: row;
+
     align-items: center;
 
     span {
@@ -393,10 +486,20 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     }
   }
 
+  @media (max-width: 1150px) {
+    .field__content__item__input {
+      flex: 100%;
+    }
+  }
+
   .field__content__item__input {
     width: 126px;
     height: 56px;
     margin-right: 15px;
+
+
+
+
   }
 
   .field__content__item__button__add {
@@ -407,7 +510,8 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
     display: flex;
     align-items: center;
     justify-content: center;
-    div{
+
+    div {
       background-image: $logo-sidebar-add;
       background-repeat: no-repeat;
       z-index: 100000000000000;
@@ -424,6 +528,8 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
   flex-wrap: wrap;
   padding-left: 16px;
   padding-right: 16px;
+
+
 
   .field__content__item__target__label {
     min-width: 92px;
@@ -461,6 +567,32 @@ $logo-sidebar-add:url(./../assets/icons/claro/Add_24px.png);
   div {
     margin-left: 16px;
   }
+
+  @media (max-width: 763px) {
+
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex: 100%;
+
+    div {
+      margin-right: 16px;
+      width: 100%;
+    }
+
+    div {
+      margin-left: 16px;
+    }
+
+
+
+    .btn {
+      width: 100% !important;
+    }
+
+  }
+
 }
 
 
