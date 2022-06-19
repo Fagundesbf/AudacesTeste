@@ -22,11 +22,8 @@ export class AppComponent implements AfterViewInit {
       this.theme.removeClaro();
     }else{
       localStorage.setItem('thema', 'theme-normal');
-      alert(tema);
       this.theme.enableClaro();
       this.theme.removeDark();
-
-
     }
   }
 }
