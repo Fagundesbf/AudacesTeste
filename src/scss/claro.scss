@@ -671,3 +671,8 @@ label {
   align-items: end;
   padding-left: 11px;
 }
+
+.swal2-popup {
+  background-color: $color-input !important;
+  color: $color-input-text !important;
+}
