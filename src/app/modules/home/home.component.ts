@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import Swal from 'sweetalert2'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,30 +19,33 @@ export class HomeComponent implements OnInit {
       numero3: ['', [Validators.required]],
       numero4: ['', [Validators.required]],
       target: ['', [Validators.required]],
-    })
+    });
+
     this.formCombinacao = this.fb.group({
       combinacao1: ['', [Validators.required]],
       combinacao2: ['', [Validators.required]],
       combinacao3: ['', [Validators.required]],
       combinacao4: ['', [Validators.required]],
-
-    })
-
+    });
   }
 
   ngOnInit(): void {
   }
 
-
-
  onSubmit(fm:any){
-    console.log('Valida',fm);
+    if(fm.status == 'VALID'){
+
+      return;
+    }
+    Swal.fire({
+      title: 'Erro!',
+      text: 'Preencha a sequencia eo Target !',
+      icon: 'error',
+      confirmButtonText: 'Ok'
+    });
  }
 
  limparCampos(){
   this.form.reset();
  }
-
-
-
 }
