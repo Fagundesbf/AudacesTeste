@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './core/components/sidebar/sidebar.component';
 import { NavComponent } from './core/components/nav/nav.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,8 +15,9 @@ import { NavComponent } from './core/components/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

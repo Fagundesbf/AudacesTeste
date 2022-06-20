@@ -1,91 +1,99 @@
 <div class="formulario__content">
   <div class="formulario__content__colun">
-    <div class=" formulario__content__colun__form">
-      <div class="row p-3">
-        <div class="col-md-12">
-          <span class="span__title__field"> Teste Audaces</span>
+    <form [formGroup]="form" autocomplete="off" (ngSubmit)="onSubmit(form)">
+      <div class=" formulario__content__colun__form">
+        <div class="row p-3">
+          <div class="col-md-12">
+            <span class="span__title__field"> Teste Audaces</span>
+          </div>
+        </div>
+        <div class="field__content">
+          <div class="field__content__item">
+            <span> Sequência: </span>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="Primeiro" id="primeiro" formControlName="numero1" type="text" />
+            <label> Primeiro número </label>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="Segundo" id="Segundo" formControlName="numero2" type="text" />
+            <label> Segundo número </label>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="Terceiro" id="Terceiro" formControlName="numero3" type="text" />
+            <label> Terceiro número </label>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="Quarto" id="Quarto" formControlName="numero4" type="text" />
+            <label> Quarto número </label>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__button__add">
+            <div class="img"></div>
+          </div>
+          <!-- item -->
+        </div>
+        <!-- //TARGET -->
+        <div class="field__content__item__target">
+          <div class="field__content__item__target__label">
+            <span> Target: </span>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__target__input">
+            <input name="target" id="target" formControlName="target" type="text" />
+          </div>
+        </div>
+        <!-- BOOTOES -->
+        <div class="field__content__button">
+          <div>
+            <button class="btn btn-defau" type="button" (click)="limparCampos()"> LIMPAR CAMPOS</button>
+          </div>
+          <div>
+            <button class="btn btn-primary" type="submit" id="combinar" name="combinar"> COMBINAR</button>
+          </div>
         </div>
       </div>
-      <div class="field__content">
-        <div class="field__content__item">
-          <span> Sequência: </span>
+    </form>
+
+    <form [formGroup]="formCombinacao" autocomplete="off">
+      <!-- COMBINAÇOES -->
+      <div class="formulario__content__colun__comb">
+        <div class="row p-3">
+          <div class="col-md-12">
+            <span class="span__title__field"> Combinações Possíveis</span>
+          </div>
         </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-          <label> Primeiro número </label>
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-          <label> Segundo número </label>
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-          <label> Terceiro número </label>
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-          <label> Quarto número </label>
-        </div>
-        <!-- item -->
-        <div class="field__content__item__button__add">
-          <div class="img"></div>
-        </div>
-        <!-- item -->
-      </div>
-      <!-- //TARGET -->
-      <div class="field__content__item__target">
-        <div class="field__content__item__target__label">
-          <span> Target: </span>
-        </div>
-        <!-- item -->
-        <div class="field__content__item__target__input">
-          <input name="" type="text" />
+        <!-- //TARGET -->
+        <div class="field__content">
+          <div class="field__content__item margin-input">
+            <span> </span>
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="combinacao1" id="combinacao1" formControlName="combinacao1" type="text" />
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="combinacao2" id="combinacao2" formControlName="combinacao2" type="text" />
+
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="combinacao3" id="combinacao3" formControlName="combinacao3" type="text" />
+
+          </div>
+          <!-- item -->
+          <div class="field__content__item__input">
+            <input name="combinacao4" id="combinacao4" formControlName="combinacao4" type="text" />
+
+          </div>
         </div>
       </div>
-      <!-- BOOTOES -->
-      <div class="field__content__button">
-        <div>
-          <button class="btn btn-defau"> LIMPAR CAMPOS</button>
-        </div>
-        <div>
-          <button class="btn btn-primary"> COMBINAR</button>
-        </div>
-      </div>
-    </div>
-    <!-- COMBINAÇOES -->
-    <div class="formulario__content__colun__comb">
-      <div class="row p-3">
-        <div class="col-md-12">
-          <span class="span__title__field"> Combinações Possíveis</span>
-        </div>
-      </div>
-      <!-- //TARGET -->
-      <div class="field__content">
-        <div class="field__content__item margin-input">
-          <span> </span>
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-        </div>
-        <!-- item -->
-        <div class="field__content__item__input">
-          <input name="" type="text" />
-        </div>
-      </div>
-    </div>
+    </form>
     <!-- //=KC -->
     <div class="formulario__content__colun__imgs">
       <div class="formulario__content__colun__imgs__contact">
@@ -109,8 +117,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
 
@@ -134,12 +140,9 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
-
   </div>
   <div class="formulario__content__colun__img">
     <div class="formulario__content__colun__img__fundo">
@@ -150,7 +153,6 @@
       </div>
       <div class="colun">
         <div class="imagem">
-
           <img src="../../../assets/images/Imagem 3.png" alt="">
         </div>
         <div class="colun__content">
