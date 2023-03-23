@@ -35,7 +35,7 @@ Sinta-se à vontade para comentar qualquer decisão de projeto tomada durante o 
 
 Qualquer dúvida, estamos à disposição. Lembre-se que quanto antes o desafio for terminado, mais cedo poderemos continuar com o processo.
 
-## LINK PUBLICADO
+## LINK PUBLICADO 
 
 (`https://audaces-teste.web.app/home`)
 
